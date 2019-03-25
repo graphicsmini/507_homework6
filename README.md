@@ -107,20 +107,17 @@ p{
 	* I made the new function named 'copyMcGill()' in the script. Also, I made new section which has id 'canada' for showing '0 Canada' at the bottom of body. I refer the function 'copyFunction()', but I made it as separate function so that they work separately.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
-
-	* So, the button 'wow' has its id named "wow-button", and this button tag runs the function 'handleClick()' whenever clicking. The function 'handleClick()' has made in the script and when it runs, the pop-up box is supposed to be shown with text 'hello'. (But in the file, I edited code 'hello' to the current date and time, so you may see different result in the pop-up box.)
 ```js
 function handleClick(){
 	alert("hello");
 }
 ```
 **and**
-
-	```js
-	<button onclick=handleClick() id="wow-button">Wow</button>
-	```
-
-
+```js
+<button onclick=handleClick() id="wow-button">Wow</button>
+```
+* 
+	* So, the button 'wow' has its id named "wow-button", and this button tag runs the function 'handleClick()' whenever clicking. The function 'handleClick()' has made in the script and when it runs, the pop-up box is supposed to be shown with text 'hello'. (But in the file, I edited code 'hello' to the current date and time, so you may see different result in the pop-up box.)
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
