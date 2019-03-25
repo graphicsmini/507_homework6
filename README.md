@@ -74,16 +74,16 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 ```js
-// You have to put these two slashes '//'.
+// You have to put these two slashes '//' in front of the comment.
 ```
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
-- We have to give the function to the part of HTML which we want to run. In this file for example, we have made a function named 'displayInformation()' in the script tag and we put this function inside of the 'body' tag because we want to run this function when 'body' is loaded. 
+	- We have to give the function to the part of HTML which we want to run. In this file for example, we have made a function named 'displayInformation()' in the script tag and we put this function inside of the 'body' tag because we want to run this function when 'body' is loaded. 
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
-- One is 'alert("hello");' and the other is 'console.log("hello in console");'. I might use console.log because it is shown just in console not in browser.
+-	 One is 'alert("hello");' and the other is 'console.log("hello in console");'. I might use console.log because it is shown just in console not in browser.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
-- We have to comment out 'alert("hello");'. When you click the button 'wow', I replace the text box in pop-up box to new Date() Instead of 'hello' so that it will show the current date and time wheneve you click. 
+	* We have to comment out 'alert("hello");'. When you click the button 'wow', I replace the text box in pop-up box to new Date() Instead of 'hello' so that it will show the current date and time wheneve you click. 
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 - I change the value of 'document.querySelector('h1').innerHTML' to "Youngmin Kim" in the function displayInformation(). 
