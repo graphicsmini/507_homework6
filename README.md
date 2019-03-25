@@ -77,30 +77,30 @@ Some JavaScript code
 // You have to put these two slashes '//' in front of the comment.
 ```
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
-	- We have to give the function to the part of HTML which we want to run. In this file for example, we have made a function named 'displayInformation()' in the script tag and we put this function inside of the 'body' tag because we want to run this function when 'body' is loaded. 
+	* We have to give the function to the part of HTML which we want to run. In this file for example, we have made a function named 'displayInformation()' in the script tag and we put this function inside of the 'body' tag because we want to run this function when 'body' is loaded. 
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
--	 One is 'alert("hello");' and the other is 'console.log("hello in console");'. I might use console.log because it is shown just in console not in browser.
+	* One is 'alert("hello");' and the other is 'console.log("hello in console");'. I might use console.log because it is shown just in console not in browser.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 	* We have to comment out 'alert("hello");'. When you click the button 'wow', I replace the text box in pop-up box to new Date() Instead of 'hello' so that it will show the current date and time wheneve you click. 
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
-- I change the value of 'document.querySelector('h1').innerHTML' to "Youngmin Kim" in the function displayInformation(). 
+	* I change the value of 'document.querySelector('h1').innerHTML' to "Youngmin Kim" in the function displayInformation(). 
 
 * **What does the word `document` represent in this code? Explain briefly.**
-- 'document' means objects or elements represented in this HTML file. 
+	* 'document' means objects or elements represented in this HTML file. 
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
-- In this document, it means the quantity of list tag is the value of the object which id is 'item'. So, if there are more 'li' tags, the value would be increasing.
+	* In this document, it means the quantity of list tag is the value of the object which id is 'item'. So, if there are more 'li' tags, the value would be increasing.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
-- white
+	* white
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
-- The reason why gray boxes have colored border is that 'p' tag has been stylized like 'border: 3px solid #FFFFFF;' in 'style' tag. I would edit this code like below in order to have blue border and light blue. 
+	* The reason why gray boxes have colored border is that 'p' tag has been stylized like 'border: 3px solid #FFFFFF;' in 'style' tag. I would edit this code like below in order to have blue border and light blue. 
 ```js
 p{
 	background-color: #00c6ff;
@@ -109,7 +109,7 @@ p{
 ```
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
-- I made the new function named 'copyMcGill()' in the script. Also, I made new section which has id 'canada' for showing '0 Canada' at the bottom of body. I refer the function 'copyFunction()', but I made it as separate function so that they work separately.
+	* I made the new function named 'copyMcGill()' in the script. Also, I made new section which has id 'canada' for showing '0 Canada' at the bottom of body. I refer the function 'copyFunction()', but I made it as separate function so that they work separately.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -123,7 +123,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-- So, the button 'wow' has its id named "wow-button", and this button tag runs the function 'handleClick()' whenever clicking. The function 'handleClick()' has made in the script and when it runs, the pop-up box is supposed to be shown with text 'hello'. (But in the file, I edited code 'hello' to the current date and time, so you may see different result in the pop-up box.)
+	* So, the button 'wow' has its id named "wow-button", and this button tag runs the function 'handleClick()' whenever clicking. The function 'handleClick()' has made in the script and when it runs, the pop-up box is supposed to be shown with text 'hello'. (But in the file, I edited code 'hello' to the current date and time, so you may see different result in the pop-up box.)
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 - 
