@@ -57,7 +57,6 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
 * **Youngmin Kim (youngmnk)**
 * Chance Murphy (chancem)
 * Kaushal Solanki (ksolanki)
@@ -129,12 +128,17 @@ function handleClick(){
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+	* It is because there is classes 'error' and 'good' indicating color of the font in the style tag and those classes are applied to where the section's id is 'result' in Jquery.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+	* By having this line, we define 'regex' has the value which begins any a-z or A-Z at the start of a line. I googled '/^[a-zA-Z]+$/;', and I learned that because we have '^' outside of [], it means "beginning with character from a-z or A-Z". On the other hand, if we have '^' insdie of [] like [^a-zA-Z], then it means "matching any character not appearing inside the []". 
+	(Reference:https://stackoverflow.com/questions/2790813/regular-expression-a-za-z-or-a-za-z)
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+	* In Javascript, we put conditional statement inside of () after writing 'if' and use {} for following results in certain conditions. 
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+	* 10000 milliseconds of duration that the object is disppearing.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -142,7 +146,8 @@ function handleClick(){
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
+*	
+	* By putting '$(document).ready(function(){' in the beginning, the code inside of {} would run when the document is loaded and ready to run this Javascript. 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
