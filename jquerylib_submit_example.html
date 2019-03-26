@@ -21,9 +21,13 @@ $(document).ready(function(){
             $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(10000);
             // Preventing form submission
             event.preventDefault();
+        } else if (currentValue === 'hello') {
+            $("#result").html('<p class="good">Hello to you too!</p>').show().fadeOut(10000);
+            event.preventDefault(); //comment out for submiting the result! This is for showing that I editted the code!
         } else {
             $("#result").html('<p class="good">Nice!</p>').show().fadeOut(10000);
         }
+    
     });
 });
 </script>

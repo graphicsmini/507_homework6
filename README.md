@@ -131,7 +131,7 @@ function handleClick(){
 	* It is because there is classes 'error' and 'good' indicating color of the font in the style tag and those classes are applied to where the section's id is 'result' in Jquery.
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
-	* By having this line, we define 'regex' has the value which begins any a-z or A-Z at the start of a line. I googled '/^[a-zA-Z]+$/;', and I learned that because we have '^' outside of [], it means "beginning with character from a-z or A-Z". On the other hand, if we have '^' insdie of [] like [^a-zA-Z], then it means "matching any character not appearing inside the []". 
+	* By having this line, we define 'regex' has the value which begins any a-z or A-Z at the start of a line. I googled '/^[a-zA-Z]+$/', and I learned that because we have '^' outside of [], it means "beginning with character from a-z or A-Z". On the other hand, if we have '^' insdie of [] like [^a-zA-Z], then it means "matching any character not appearing inside the []". 
 	(Reference:https://stackoverflow.com/questions/2790813/regular-expression-a-za-z-or-a-za-z)
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
@@ -147,7 +147,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 *	
-	* By putting '$(document).ready(function(){' in the beginning, the code inside of {} would run when the document is loaded and ready to run this Javascript. 
+	* By putting '$(document).ready(function(){' in the beginning, the code inside of {} would run when the document is loaded and ready to execute the code. 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
